@@ -1,0 +1,155 @@
+/*style sign up button*/
+
+	#reg {
+	  display: none;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  background: rgba(24, 20, 20, 0.987);
+	  box-sizing: border-box;
+	  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	  border-radius: 10px;
+	}
+	
+	.form {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	  max-width: 350px;
+	  padding: 20px;
+	  	   
+	}
+
+
+	.title {
+	  font-size: 28px;
+	  color: white;
+	  font-weight: 600;
+	  letter-spacing: 2px;
+	  align-items: center;
+	  text-align: center;
+	}
+
+
+
+	.message, .signin {
+	  color: rgba(88, 87, 87, 0.822);
+	  font-size: 14px;
+	}
+
+	.signin {
+	  text-align: center;
+	}
+
+	.signin a {
+	  color: white;
+	}
+
+	.signin a:hover {
+	  text-decoration: underline white;
+	}
+
+	.flex {
+	  display: flex;
+	  width: 100%;
+	  gap: 6px;
+	}
+
+	.form label {
+	  position: relative;
+	}
+
+	.form label .input {
+	  width: 100%;
+	  padding: 10px 0;
+	  font-size: 16px;
+	  color: #fff;
+	  margin-bottom: 30px;
+	  border: none;
+	  border-bottom: 1px solid #fff;
+	  outline: none;
+	  background: transparent;
+	}
+
+	.form label .input + span {
+	  position: absolute;
+	  left: 10px;
+	  top: 15px;
+	  color: white;
+	  font-size: 0.9em;
+	  cursor: text;
+	  transition: 0.5s;
+	  
+	}
+
+	.form label .input:placeholder-shown + span {
+	  top: 10px;
+	  font-size: 0.9em;
+	}
+
+	.form label .input:focus + span,.form label .input:valid + span {
+	  top: -20px;
+	  left: 0;
+	  color: #bdb8b8;
+	  font-size: 12px;
+    }
+
+	.form label .input:valid + span {
+	  color: green;
+	}
+	
+	#submity .submit a {
+	  position: relative;
+	  display: inline-block;
+	  padding: 10px 20px;
+	  color: #ffffff;
+	  font-size: 16px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  overflow: hidden;
+	  transition: .5s;
+	  margin-top: 40px;
+	  letter-spacing: 4px
+	}
+
+	#submity .submit a:hover {
+	  background: #d9dade;
+	  color: #fff;
+	  border-radius: 5px;
+	  box-shadow: 0 0 5px #d9dade,
+				  0 0 25px #d9dade,
+				  0 0 50px #d9dade,
+				  0 0 100px #d9dade;
+      cursor: pointer;
+	}
+
+	#submity .submit a p {
+	  position: relative;
+	  display: block;
+	  
+	}
+	@keyframes btn-anim1 {
+	  0% {
+		left: -100%;
+	  }
+
+	  50%,100% {
+		left: 100%;
+	  }
+	}
+	#submity .submit a p:nth-child(1) {
+	  bottom: 2px;
+	  left: -100%;
+	  width: 100%;
+	  height: 2px;
+	  
+	  background: linear-gradient(90deg, transparent, #d9dade);
+	  animation: btn-anim1 2s linear infinite;
+	}
+    #submity .submit button {
+	background: transparent;
+	border-radius: 0px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px solid #333;
+	}
